@@ -1,6 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View,Image, ImageBackground } from 'react-native'
 import React from 'react'
 import { Card } from '../../components'
+import { Background, ImgProfile } from '../../assets'
 
 const Home = ({ navigation }) => {
     return (
@@ -8,9 +9,9 @@ const Home = ({ navigation }) => {
             <TouchableOpacity style={{ backgroundColor: 'red' }} onPress={() => navigation.navigate('Detail')}>
                 <Text>Button</Text>
             </TouchableOpacity>
-            <Card title='forest'/>
-            <Card title='forests'/>
-            <Card title='foresat'/>
+            <Card title='forest' imageSource={Background}/>
+            <Card title='forests' imageSource={ImgProfile}/>
+            <Card title='foresat' imageSource={Background}/>
         </View>
     )
 }
